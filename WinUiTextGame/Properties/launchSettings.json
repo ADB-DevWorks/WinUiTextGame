@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUiTextGame (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUiTextGame (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
