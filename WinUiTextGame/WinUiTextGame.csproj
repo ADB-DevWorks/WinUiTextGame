@@ -14,6 +14,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Controls\PlayerControls.xaml" />
+    <None Remove="Controls\StoryPanel.xaml" />
     <None Remove="GamePage.xaml" />
   </ItemGroup>
 
@@ -54,6 +56,16 @@
     <Folder Include="Pages\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\PlayerControls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\StoryPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--
