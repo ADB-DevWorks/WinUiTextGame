@@ -15,6 +15,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using WinUiTextGame.Pages;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -44,7 +45,21 @@ namespace WinUiTextGame
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             _window = new MainWindow();
+
+            Frame rootFrame = new Frame();
+            rootFrame.NavigationFailed += OnNavigationFailed;
+
+            rootFrame.Navigate(typeof(TitlePage), args.Arguments);
+
+            _window.Content = rootFrame;
+
             _window.Activate();
         }
+
+        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        {
+            throw new Exception("Failed to load page " + e.SourcePageType.FullName);
+        }
+
     }
 }

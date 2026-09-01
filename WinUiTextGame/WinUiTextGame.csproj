@@ -17,6 +17,7 @@
     <None Remove="Controls\PlayerControls.xaml" />
     <None Remove="Controls\StoryPanel.xaml" />
     <None Remove="GamePage.xaml" />
+    <None Remove="Pages\TitlePage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,9 +54,13 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Pages\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\TitlePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\PlayerControls.xaml">

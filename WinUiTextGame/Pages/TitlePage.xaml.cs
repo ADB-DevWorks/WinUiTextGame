@@ -21,11 +21,26 @@ namespace WinUiTextGame.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class GamePage : Page
+    public sealed partial class TitlePage : Page
     {
-        public GamePage()
+        public TitlePage()
         {
             InitializeComponent();
+        }
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GamePage));
+        }
+
+        private void HyperlinkButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HyperlinkButton_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
