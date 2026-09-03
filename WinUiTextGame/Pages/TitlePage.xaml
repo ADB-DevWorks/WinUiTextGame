@@ -9,24 +9,26 @@
     mc:Ignorable="d">
 
     <StackPanel HorizontalAlignment="Center"
-                VerticalAlignment="Center">
+                VerticalAlignment="Center"
+                Spacing="30">
 
 
-        <TextBlock Text="Heloo World!!!"
-                   FontSize="75"
+        <TextBlock Text="WinUi Text Game Engine"
+                   FontSize="50"
                    HorizontalAlignment="Center"
+                   Foreground="RosyBrown"
                    />
 
         <HyperlinkButton Content="Start New Game"
-                         Click="HyperlinkButton_Click"
+                         Click="NewGameLink_Click"
                          HorizontalAlignment="Center"
                          />
         <HyperlinkButton Content="Load Game"
-                         Click="HyperlinkButton_Click_1"
+                         Click="LoadGame_Click"
                          HorizontalAlignment="Center"
                          />
         <HyperlinkButton Content="Options"
-                         Click="HyperlinkButton_Click_2"
+                         Click="OptionsLink_Click"
                          HorizontalAlignment="Center"
                          />
     </StackPanel>

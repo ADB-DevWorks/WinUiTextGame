@@ -14,7 +14,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Controls\GameLogControl.xaml" />
+    <None Remove="Controls\InventoryControl.xaml" />
     <None Remove="Controls\PlayerControls.xaml" />
+    <None Remove="Controls\PlayerStatsControl.xaml" />
     <None Remove="Controls\StoryPanel.xaml" />
     <None Remove="GamePage.xaml" />
     <None Remove="Pages\TitlePage.xaml" />
@@ -56,6 +59,21 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\InventoryControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\PlayerStatsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\GameLogControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\TitlePage.xaml">

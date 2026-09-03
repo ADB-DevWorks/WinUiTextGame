@@ -21,7 +21,24 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <StackPanel
+            Grid.Column="0"
+            Grid.RowSpan="2"
+            Background="Yellow"
+            >
+            
+        </StackPanel>
+
         <controls:StoryPanel Grid.Column="1" Grid.Row="0"/>
         <controls:PlayerControls Grid.Column="1" Grid.Row="1"/>
+
+        <StackPanel
+            Grid.Column="2"
+            Grid.RowSpan="2"
+            Background="Purple"
+            >
+            
+        </StackPanel>
+        
     </Grid>
 </Page>
